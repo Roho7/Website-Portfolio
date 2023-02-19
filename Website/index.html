@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles01.css">
+    <link rel="shortcut icon" href="Logo\logoprime.png" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navbar" id="navlist">
+        <a href="index.html"><img class="logo" src="Logo\Logo-Prime.svg" alt=""></a>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+        <ul>
+            <!-- <a href="Cat_Pg_UI.html"><li>UI/UX</li></a> -->
+            <!-- <a href="Cat_Pg_Sci.html"><li>Sci-Art</li></a> -->
+            <a href="Cat_Pg_Animation.html"><li>Projects</li></a>
+            <a href="Cat_Pg_Publication.html"><li>Publications</li></a>
+            <a href="About_Me.html"><li>About Me</li></a>
+            <a href="Contact.html"><li>Contact</li></a>
+        </ul>
+    </div>
+
+<!-- =========HERO========== -->
+    <div class="outcont">
+        <div class="hero">
+            <div class="hero-left">
+                <!-- <h2>Hi!</h2> -->
+                <span class="mono">Hi! I'm</span>
+                <h1>Roho</h1>
+                <span class="mono">[ Rohosen Bhattacharya ]</span>
+            </div>
+            <div class="hero-right">
+                <span class="slider-text">
+                    UX Designer
+                </span>
+                <span class="slider-text">
+                    Animator
+                </span>
+                <span class="slider-text">
+                    Medical Illustrator
+                </span>
+                <span class="slider-text">
+                    Neuroscience Student
+                </span>
+            </div>
+        </div>
+<!-- ================ ABOUT ME ============  -->
+    <section>
+        <div class="aboutme">
+            <div class="abm-text">
+                <h2>About Me</h2>
+                <p>Born in <strong>Kolkata, India</strong>, I was raised in a culturally lively 
+                    household. <br> <br>
+                    I grew up with an insatiable curiosity about the world which led me 
+                    to pursue several disciplines.
+                    With strong roots in arts, I decided to pursue <strong>science</strong> as my higher education.
+                    I fell in love with Mathematics and Physics. But my desire to understand the <strong>Mind</strong> was 
+                    unshakable. <br>
+                    I decided to pursue <strong>Neuroscience</strong> in my bacherlor's and am currenly in my final year. <br>
+                </p><br>
+                <a href=""><button class="button" href="About_Me.html">More About Me</button></a>
+            </div>
+            <img src="Logo\myself1.jpg" alt="">
+        </div>
+    </section>
+<!-- ============== CAROUSEL NAVIGATION BAR ============== -->
+        <div class="section-2">
+            <h2>Latest Projects</h2>
+
+            <div class="sep-lines">   </div>
+
+            
+        <!-- ============ DROP DOWN LIST FOR MOBILE =================== -->
+                <div class="collection-nav-dropdown" >
+                    <div class="dropdown-btn" onclick="display()"> <span class="drop-btn-text mono">Select</span> <i class="bi-caret-down-fill"></i> </div>
+                    <ul id="dropdown-list">
+                        <li data-tab-target='#ux-tab' onclick="changeName('UI/UX')">UI/UX</li>
+                        <li data-tab-target='#animation-tab' onclick="changeName('Animations')">Animations</li>
+                        <li data-tab-target='#Sci-Art' onclick="changeName('Sci-Art')">Sci-Art</li>
+                        <li data-tab-target='#Others' onclick="changeName('Others')">Others</li>
+                    </ul>
+                </div>
+        <!-- =============== NATIVE NAVIGATION ======================= -->
+                <div class="collection-nav">
+                    <ul>
+                        <li data-tab-target='#ux-tab'>UI/UX</li>
+                        <li data-tab-target='#animation-tab'>Animations</li>
+                        <li data-tab-target='#Sci-Art'>Sci-Art</li>
+                        <li data-tab-target='#Others'>Others</li>
+                    </ul>
+                </div>
+            <div class="collection-outcont">
+    <!-- ============ UX CAROUSEL ITEMS ============= -->
+                <div id="ux-tab" class="active" data-tab-content>
+                    <div class="collection-carousel">
+                        <a href="Proj_UI_Hittesh.html"><div class="carousel-img-cont"> <div class="carousel-img"><span>Portfolio Design</span><img src="Works\UIUX\HS7.png" alt="Portfolio Design"></div>  </div></a>
+                        <a href="Proj_UI_Frenzopay.html"><div class="carousel-img-cont"> <div class="carousel-img"><span>Frenzopay</span><img src="Works\Frenzopay\Fr1.png" alt="Frenzopay"></div>  </div></a>
+                        <a href="Proj_UI_Oesophagus.html"><div class="carousel-img-cont"> <div class="carousel-img"><span>Oesophagus</span><img src="Works\UIUX\O1.png" alt="Oesophagus"></div>  </div></a>
+                    </div> 
+                    <a href="Cat_Pg_UI.html"><button class="button" href="Cat_Pg_UI.html">See More</button></a>
+                </div>
+                
+                <!-- ======== Animation Carousel Items ====== -->
+                <div id="animation-tab" data-tab-content>
+                    <div class="collection-carousel">
+                        <a href=""><div class="carousel-img-cont"> <div class="carousel-img"><span>Frenzopay</span><img src="Works\Frenzopay\Fr1.png" alt="Frenzopay"></div>  </div> </a>                   
+                        <a href=""><div class="carousel-img-cont"> <div class="carousel-img"><span>Portfolio Design</span><img src="Works\UIUX\HS7.png" alt=""></div>  </div></a>
+                        <a href=""><div class="carousel-img-cont"> <div class="carousel-img"><span>Frenzopay</span><img src="Works\Frenzopay\Fr1.png" alt=""></div>  </div></a>   
+                    </div> 
+                    <a href=""><button class="button" href="Cat_Pg_UI.html">See More</button></a>
+                </div>
+
+                <!-- ======== Sci-Art Carousel Items ====== -->
+                <div id="Sci-Art" data-tab-content>
+                    <div class="collection-carousel">
+                        <a href="Proj_Sci_Glia.html"><div class="carousel-img-cont"> <div class="carousel-img"><span>Glial Cells</span><img src="Works\Sci-Art\G1.jpg" alt=""></div>  </div> </a>
+                        <a href="Proj_Sci_Autopagy.html"><div class="carousel-img-cont"> <div class="carousel-img"><span>Autophagy Animation</span><img src="Works\Sci-Art\A2.png" alt=""></div>  </div></a>
+                        <a href="Cat_Pg_Sci.html"><div class="carousel-img-cont"> <div class="carousel-img"><span>Lytic Phase</span><img src="Works\Sci-Art\L1.png" alt=""></div>  </div></a>
+                        <a href="Cat_Pg_SDS.html"><div class="carousel-img-cont"> <div class="carousel-img"><span>SDS Page</span><img src="Works\Sci-Art\L1.png" alt=""></div>  </div></a>
+                    </div> 
+                    <a href="Cat_Pg_Sci.html"><button class="button" href="Cat_Pg_UI.html">See More</button></a>
+                </div>
+
+                <!-- ============= Others Carousel Items=========== -->
+                <div id="Others" data-tab-content>
+                    <div class="collection-carousel">
+                        <a href="Proj_Sci_Glia.html"><div class="carousel-img-cont"> <div class="carousel-img"> <span>Accident Centers Texas Brand Guidelines</span><img src="Works\Clients\AC14.png" alt=""></div>  </div> </a>
+                        <a href="Proj_Sci_Autopagy.html"><div class="carousel-img-cont"> <div class="carousel-img"> <span>Tinka Foundation Brand Guidelines</span><img src="" alt=""></div>  </div></a>
+                        <a href="Cat_Pg_Sci.html"><div class="carousel-img-cont"> <div class="carousel-img"> <span>Credexon</span><img src="" alt=""></div>  </div></a>
+                    </div> 
+                    <a href="Cat_Pg_Sci.html"><button class="button" href="Cat_Pg_UI.html">See More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== SIDEBAR =================== -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Cat_Pg_UI.html">UI/UX</a>
+            <a href="Cat_Pg_Sci.html">Sci-Art</a>
+            <a href="Cat_Pg_Animation.html">Animations</a>
+            <a href="Cat_Pg_Publication.html">Publications</a>
+            <a href="About_Me.html">About Me</a>
+            <a href="Contact.html">Contact</a>
+    </div>
+    <!-- =========== FOOTER ================= -->
+    <footer>
+        <div class="footer-cont">
+            <ul class="footer-list">
+                <a href="Cat_Pg_Animation.html"><li>UI/UX</li></a>
+                <a href="Cat_Pg_Animation.html"><li>Animations</li></a>
+                <a href="Cat_Pg_Animation.html"><li>Sci-Art</li></a>
+                <a href="Cat_Pg_Publication.html"><li>Publications</li></a>
+            </ul>
+            <ul class="footer-list">
+                <a href="About_Me.html"><li>About Me</li></a>
+            </ul>
+            <div class="footer-list">
+                Contact Me
+                    <div class="foot-icons">
+                        <a href=""><i class="bi-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="bi-linkedin" aria-hidden="true"></i></a>
+                        <a href=""><i class="bi-envelope" aria-hidden="true"></i></a>
+                    </div>
+                    <img src="Logo\logo-prime.svg" alt="">
+            </div>
+            
+        </div>
+    </footer>
+<script src="tabs.js"></script>
+</body>
+</html>
